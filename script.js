@@ -1,16 +1,27 @@
+let accounts = [];
+
 async function connectWallet() {
   if (window.ethereum) {
     try {
-      const accounts = await ethereum.request({ method: "eth_requestAccounts" });
-      document.getElementById("status").innerText = `Wallet connected: ${accounts[0]}`;
+      accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+      document.getElementById("status").innerText = "Wallet connected: " + accounts[0];
     } catch (err) {
-      console.error("Wallet connection failed:", err);
+      document.getElementById("status").innerText = "Connection failed.";
     }
   } else {
-    alert("MetaMask not found. Please install it.");
+    alert("Please install MetaMask!");
   }
 }
 
-function claimAirdrop() {
-  document.getElementById("status").innerText = "Airdrop claimed successfully! (Simulated)";
+async function claimAirdrop() {
+  if (!accounts.length) {
+    alert("Please connect wallet first.");
+    return;
+  }
+
+  // Demo feedback only
+  document.getElementById("status").innerText = "Airdrop claimed! (Demo - no real transaction)";
 }
+
+document.getElementById("connectButton").addEventListener("click", connectWallet);
+document.getElementById("claimButton").addEventListener("click", claimAirdrop);
