@@ -1,28 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TaurosX Airdrop</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaurosX</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #0d0d0d;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: 0 0 25px gold;
+      margin: 0 auto 20px;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      color: gold;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ccc;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 12px 24px;
+      background-color: gold;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    a.button:hover {
+      background-color: #ffc107;
+    }
+
+    .features {
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .features h2 {
+      color: gold;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+    }
+
+    .features span {
+      font-weight: bold;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  <img src="taurosx-logo.jpeg" alt="TaurosX Logo" width="150">
+  <div class="container">
+    <div class="logo">
+      <img src="taurosx-logo.jpeg" alt="TaurosX Logo" />
+    </div>
+    <h1>Welcome to TaurosX</h1>
+    <p>The future of decentralized finance starts here.</p>
+    <a href="#" class="button">Claim Airdrop</a>
 
-  <h1>Welcome to TaurosX</h1>
-  <p>The future of decentralized finance starts here.</p>
-  <a href="#">Claim Airdrop</a>
-
-  <div class="features">
-    <h2>What is TaurosX?</h2>
-    <p>TaurosX is a next-gen cryptocurrency project built on Binance Smart Chain. It is designed to reward its holders and grow its ecosystem.</p>
-
-    <h2>Key Features</h2>
-    <p>🔥 <strong>Token Burn</strong><br>Automatically reduces supply to increase value.</p>
-    <p>❄️ <strong>Freeze</strong><br>Secure your assets by locking them for a period.</p>
-    <p>🎁 <strong>Airdrop</strong><br>Earn tokens by participating in our Airdrop campaign.</p>
-    <p>💸 <strong>2% Commission</strong><br>Enjoy 2% commission on every transaction.</p>
+    <div class="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>🔥 <span>Token Burn</span>: Reduces supply to increase value.</li>
+        <li>❄️ <span>Freeze</span>: Lock assets for secure holding.</li>
+        <li>🎁 <span>Airdrop</span>: Participate and earn tokens.</li>
+        <li>💸 <span>2% Commission</span>: You earn from every transaction.</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
