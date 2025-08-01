@@ -55,9 +55,15 @@
       color: #ccc;
     }
 
-    a.button {
-      display: inline-block;
+    .button-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
       margin: 20px 0;
+    }
+
+    a.button {
       padding: 12px 24px;
       background-color: gold;
       color: #000;
@@ -89,15 +95,6 @@
       font-weight: bold;
       color: #fff;
     }
-
-    .trade {
-      margin-top: 40px;
-    }
-
-    .trade a {
-      color: #00d4ff;
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
@@ -105,28 +102,34 @@
     <div class="logo">
       <img src="taurosx-logo.jpeg" alt="TaurosX Logo" />
     </div>
+
     <h1>Welcome to TaurosX</h1>
-    <p>The future of decentralized finance starts here.</p>
-    <a href="#" class="button">Claim Airdrop</a>
+    <p>
+      TaurosX is a revolutionary BSC token designed for bold traders and fearless holders.  
+      <br /> Built with real utility, sustainable growth, and blazing-fast DeFi power.
+      <br /> No limits. No apologies. Just power.
+    </p>
+
+    <div class="button-group">
+      <a href="#" class="button">Claim Airdrop</a>
+      <a href="https://pancakeswap.finance" class="button" target="_blank">Trade on PancakeSwap</a>
+    </div>
 
     <h2>What is TaurosX?</h2>
     <p>
-      TaurosX is a next-gen cryptocurrency project built on Binance Smart Chain.<br>
-      It's designed to reward holders and grow its ecosystem.
+      TaurosX is not just another token — it's a movement.  
+      <br /> Fueled by a deflationary model, community strength, and unstoppable ambition.
+      <br /> TaurosX delivers true ownership and daily growth for early believers.
     </p>
 
     <div class="features">
       <h2>Key Features</h2>
       <ul>
-        <li>🔥 <span>Token Burn</span>: Reduces supply to increase value.</li>
-        <li>❄️ <span>Freeze</span>: Lock assets for secure holding.</li>
-        <li>🎁 <span>Airdrop</span>: Participate and earn tokens.</li>
-        <li>💸 <span>2% Commission</span>: You earn from every transaction.</li>
+        <li>🔥 <span>Token Burn</span>: Reduces supply, increases scarcity and value.</li>
+        <li>❄️ <span>Freeze</span>: Lock liquidity and assets for long-term security.</li>
+        <li>🎁 <span>Airdrop</span>: Claim your free TAUX and join the future.</li>
+        <li>💸 <span>2% Commission</span>: Auto-earn on every transaction.</li>
       </ul>
-    </div>
-
-    <div class="trade">
-      <p>🔁 Trade on <a href="https://pancakeswap.finance" target="_blank">PancakeSwap</a></p>
     </div>
   </div>
 </body>
