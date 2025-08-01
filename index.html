@@ -4,138 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TaurosX</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: #0d0d0d;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 650px;
-    }
-
-    .logo {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      box-shadow: 0 0 25px gold;
-      margin: 0 auto 20px;
-      background-color: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    h1 {
-      color: gold;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: gold;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: #ccc;
-    }
-
-    .buttons {
-      margin: 20px 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    a.button {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: gold;
-      color: #000;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    a.button:hover {
-      background-color: #ffc107;
-    }
-
-    .features {
-      text-align: left;
-      margin-top: 30px;
-    }
-
-    .features ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .features li {
-      margin-bottom: 10px;
-    }
-
-    .features span {
-      font-weight: bold;
-      color: #fff;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <div class="logo">
-      <img src="taurosx-logo.jpeg" alt="TaurosX Logo" />
-    </div>
-
-    <h1>Welcome to TaurosX</h1>
-
-    <h2>What is TaurosX?</h2>
-    <p>
-      TaurosX is a revolutionary BSC-based token designed for traders, investors, and DeFi pioneers.<br>
-      With deflationary mechanics, secure token freezing, and rewarding airdrops, TaurosX empowers its holders with passive earnings and real-world utility — all within a blazing-fast, low-fee ecosystem.
-    </p>
+    <img src="logo.jpeg" alt="TaurosX Logo" class="logo" />
+    <h1 class="golden-title">Welcome to TaurosX</h1>
+    <p class="sub">Empowering the future of decentralized finance.</p>
 
     <div class="buttons">
-      <a href="#" class="button">Claim Airdrop</a>
-      <a href="https://pancakeswap.finance" class="button" target="_blank">Trade on PancakeSwap</a>
+      <a href="#" class="btn">Claim Airdrop</a>
+      <a href="https://pancakeswap.finance" class="btn" target="_blank">Trade Now</a>
     </div>
 
-    <h2>Key Features</h2>
-    <div class="features">
+    <section>
+      <h2 class="golden-title">About TaurosX</h2>
+      <p>TaurosX is a next-generation DeFi project aiming to revolutionize digital finance by providing powerful tools for holders, traders, and developers.</p>
+    </section>
+
+    <section>
+      <h2 class="golden-title">What is TaurosX?</h2>
+      <p>A cryptocurrency built on Binance Smart Chain, focusing on community rewards, long-term sustainability, and automated finance features.</p>
+    </section>
+
+    <section>
+      <h2 class="golden-title">Trade on PancakeSwap</h2>
+      <p>Trade TAUX directly on PancakeSwap with low fees and high liquidity. <br><a href="https://pancakeswap.finance" target="_blank">Go to PancakeSwap</a></p>
+    </section>
+
+    <section>
+      <h2 class="golden-title">Key Features</h2>
       <ul>
-        <li>🔥 <span>Token Burn</span>: Reduces supply to increase value.</li>
-        <li>❄️ <span>Freeze</span>: Lock assets for secure holding.</li>
-        <li>🎁 <span>Airdrop</span>: Participate and earn tokens.</li>
-        <li>💸 <span>2% Commission</span>: You earn from every transaction.</li>
+        <li>🔥 Token Burn – Increases scarcity and value.</li>
+        <li>❄️ Freeze – Temporarily lock tokens for rewards.</li>
+        <li>🎁 Airdrop – Distribute tokens to community members.</li>
+        <li>💸 2% Commission – Earn by holding and referring.</li>
       </ul>
-    </div>
+    </section>
+
+    <section>
+      <h2 class="golden-title">Tokenomics</h2>
+      <p>Total Supply: 1,000,000 TAUX</p>
+      <ul>
+        <li>🔸 40% Airdrop</li>
+        <li>🔸 30% Liquidity</li>
+        <li>🔸 20% Development</li>
+        <li>🔸 10% Marketing</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="golden-title">Roadmap</h2>
+      <ul>
+        <li>✅ Q3 2025: Token Launch & Airdrop</li>
+        <li>✅ Q4 2025: Listings & Marketing Campaign</li>
+        <li>🚧 Q1 2026: Staking & DEX Integrations</li>
+        <li>🚀 Q2 2026: NFT Marketplace + Partnerships</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="golden-title">Whitepaper</h2>
+      <p>Download our <a href="#" target="_blank">Whitepaper (PDF)</a> for full details about the project, vision, and token utility.</p>
+    </section>
+
+    <section>
+      <h2 class="golden-title">Contact</h2>
+      <p>
+        📧 Email: <a href="mailto:contact@taurosx.com">contact@taurosx.com</a><br>
+        📱 Telegram: <a href="https://t.me/taurosx" target="_blank">@taurosx</a><br>
+        🐦 Twitter: <a href="https://twitter.com/taurosx" target="_blank">@taurosx</a>
+      </p>
+    </section>
 
     <footer>
-      &copy; 2025 TaurosX. All rights reserved.
+      <p>© TaurosX 2025 – All rights reserved.</p>
     </footer>
   </div>
 </body>
