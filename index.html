@@ -4,35 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TaurosX Airdrop</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- الشعار في الأعلى -->
-  <div style="text-align: center; margin-top: 20px;">
-    <img src="taurosx-logo.jpeg" alt="TaurosX Logo" width="150" style="border-radius: 50%; box-shadow: 0 0 10px gold;" />
-  </div>
-
-  <main class="container">
+  <header>
+    <img src="logo.png" alt="TaurosX Logo" class="logo" />
     <h1>Welcome to TaurosX</h1>
+    <p>The future of decentralized finance starts here.</p>
+    <a href="#airdrop" class="cta-button">Claim Airdrop</a>
+  </header>
 
-    <p>Smart Contract:  
-      <code>0xc0cF497C890c1fE472248637656d7b0D21c512Ac</code>
+  <section class="about">
+    <h2>What is TaurosX?</h2>
+    <p>
+      TaurosX is a next-gen cryptocurrency project built on Binance Smart Chain,
+      offering secure, fast, and low-cost transactions. With advanced features like
+      token burn, freeze, and Airdrop distribution, TaurosX is designed to reward
+      its holders and grow its ecosystem.
     </p>
+  </section>
 
-    <a 
-      href="https://pancakeswap.finance/swap?outputCurrency=0xc0cF497C890c1fE472248637656d7b0D21c512Ac" 
-      target="_blank" 
-      class="button">
-      👉 Trade on PancakeSwap
-    </a>
+  <section class="features">
+    <h2>Key Features</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>🔥 Token Burn</h3>
+        <p>Automatically reduces supply to increase value.</p>
+      </div>
+      <div class="feature">
+        <h3>❄️ Freeze</h3>
+        <p>Secure your assets by locking them for a period.</p>
+      </div>
+      <div class="feature">
+        <h3>🎁 Airdrop</h3>
+        <p>Earn tokens by participating in our Airdrop campaign.</p>
+      </div>
+      <div class="feature">
+        <h3>💸 2% Commission</h3>
+        <p>Enjoy 2% commission on every transaction.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="airdrop">
-      <h2>🚀 Airdrop Coming Soon</h2>
-      <p>Connect your wallet to claim your TAUX tokens.</p>
-    </section>
-  </main>
+  <section id="airdrop" class="airdrop">
+    <h2>Claim Your Airdrop</h2>
+    <button onclick="connectWallet()">Connect Wallet</button>
+    <button onclick="claimAirdrop()">Claim Airdrop</button>
+    <p id="status"></p>
+  </section>
 
+  <footer>
+    <p>&copy; 2025 TaurosX. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
